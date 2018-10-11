@@ -15,7 +15,8 @@
     <meta name="format-detection" content="telephone=no">
     <link rel="canonical" href="#">
     <link rel="apple-touch-icon" href="images/common/touch-icon.png">
-    <link rel="shortcut icon" href="images/common/favicon.ico"> 
+    <link rel="shortcut icon" href="images/common/favicon.ico">
+    <link rel="stylesheet" href="./css/reset.css"> 
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -30,17 +31,17 @@
     <nav>
         <img src="./images/pc/header/header_logo.png" alt="">
         <ul>
-            <li>ABOUT</li>
-            <li>COURSE</li>
-            <li>NEWS</li>
-            <li>ACCESS</li>
-            <li>CONTACT</li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#course">COURSE</a></li>
+            <li><a href="#news">NEWS</a></li>
+            <li><a href="#access">ACCESS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
         </ul>
     </nav>
     <main>
         <div id="about">
             <div class="wrapper">
-                <h2>about</h2>
+                <h2>ABOUT</h2>
                 <p class="sub-title">チーズアカデミーについて</p>
                 <p>チーズアカデミーは、チーズ職人養成学校です。</p>
                 <p>チーズの素晴らしさを、自給自足を通じて、できるだけ多くの人に知っていただきたい。<br>
@@ -96,41 +97,48 @@
                 </div>
             </div>
         </div>
+
         <div id="news">
             <div class="wrapper">
                 <h2>NEWS</h2>
                 <p class="sub-title">ニュース</p>
                 <div class="articles">
-                    <div class="article">
-                        <img src="./images/pc/news/news_img.jpg" alt="">
-                        <p class="date">2016/11/18</p>
-                        <p class="title">チーズアカデミー卒業生のコスゲさんによる
-                                チーズだけをふんだんに使用した話題のピザ屋
-                                「Kosuge Pizza」が渋谷でオープンしました！</p>
+                    <div class="col">
+                        <div class="article">
+                            <img src="./images/pc/news/news_img.jpg" alt="">
+                            <p class="date">2016/11/18</p>
+                            <p class="title">チーズアカデミー卒業生のコスゲさんによる
+                                    チーズだけをふんだんに使用した話題のピザ屋
+                                    「Kosuge Pizza」が渋谷でオープンしました！</p>
+                        </div>
                     </div>
-                    <div class="article">
-                        <img src="./images/pc/news/news_img.jpg" alt="">
-                        <p class="date">2016/11/18</p>
-                        <p class="title">チーズアカデミー卒業生のコスゲさんによる
-                                チーズだけをふんだんに使用した話題のピザ屋
-                                「Kosuge Pizza」が渋谷でオープンしました！</p>
+                    <div class="col">
+                        <div class="article">
+                            <img src="./images/pc/news/news_img.jpg" alt="">
+                            <p class="date">2016/11/18</p>
+                            <p class="title">チーズアカデミー卒業生のコスゲさんによる
+                                    チーズだけをふんだんに使用した話題のピザ屋
+                                    「Kosuge Pizza」が渋谷でオープンしました！</p>
+                        </div>
                     </div>
-                    <div class="article">
-                        <img src="./images/pc/news/news_img.jpg" alt="">
-                        <p class="date">2016/11/18</p>
-                        <p class="title">チーズアカデミー卒業生のコスゲさんによる
-                                チーズだけをふんだんに使用した話題のピザ屋
-                                「Kosuge Pizza」が渋谷でオープンしました！</p>
+                    <div class="col">
+                        <div class="article">
+                            <img src="./images/pc/news/news_img.jpg" alt="">
+                            <p class="date">2016/11/18</p>
+                            <p class="title">チーズアカデミー卒業生のコスゲさんによる
+                                    チーズだけをふんだんに使用した話題のピザ屋
+                                    「Kosuge Pizza」が渋谷でオープンしました！</p>
+                        </div>
                     </div>
                 </div>
-                <a href="#">More</a>
+                <a href="#" class="btn">More</a>
             </div>
         </div>
         <div id="access">
             <div class="wrapper">
-                <h2>Access</h2>
+                <h2>ACCESS</h2>
                 <p class="sub-title">会社情報</p>
-                <!-- [TODO] 地図を埋め込む -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.3968769095454!2d139.71163885045158!3d35.66722853825082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c9faa249f2b%3A0x3563e92b2a0598d3!2z44CSMTA3LTAwNjEg5p2x5Lqs6YO95riv5Yy65YyX6Z2S5bGx77yT5LiB55uu77yV4oiS77yW!5e0!3m2!1sja!2sjp!4v1539275114756" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
                 <dl>
                     <dt>学校名</dt>
                     <dd>チーズアカデミーTOKYO</dd>
@@ -147,7 +155,7 @@
         </div>
         <div id="contact">
             <div class="wrapper">
-                <h2>Contact</h2>
+                <h2>CONTACT</h2>
                 <p class="sub-title">説明会お申し込み・お問い合わせ</p>
                 <p>ぜひ1度、足を運んでみませんか。説明会は随時開催中。<br>
                         その他、お問い合わせもお気軽にどうぞ。お待ちしております。</p>
