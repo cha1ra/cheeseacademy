@@ -5,7 +5,6 @@ $nav-height:70px;
 @media screen and (max-width: 640px){
 
     body {
-        text-align: center;
         font-size: 16px;
         font-family: "Arial", "YuGothic","Yu Gothic";
         line-height: 1.75em;
@@ -56,20 +55,19 @@ $nav-height:70px;
 
     nav{
         position: fixed;
+        background-color: #fff;
         top:0;
         width: 100%;
         height: 50px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
         img{
             padding-top: 16px;
             padding-bottom: 16px;
             width:auto;
             height:$nav-height - 16px - 16px;
+            margin:auto;
         }
         ul{
-            display: flex;
+            display: none;
             li{
                 margin-right: 54px;
                 a{
@@ -103,22 +101,13 @@ $nav-height:70px;
     }
 
     .column{
-        display: flex;
-        flex-wrap:wrap;
-        img{
-            width: 50%;
-            height:50%;
-        }
+        display: block;
         .description{
-            width: 50%;
             text-align: left;
             .row{
                 margin-left:48px;
                 margin-right: 48px;
                 height: 100%;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
             }
             h3{
                 margin-bottom: 40px;
@@ -133,12 +122,12 @@ $nav-height:70px;
             margin-top: 48px;
         }
         .wrapper{
+            width: auto;
             margin:auto;
         }
 
         .articles{
-            display: flex;
-            flex-wrap:wrap;
+            display: block;
             margin:auto;
             .col{
                 width: 100% / $article-grid;
@@ -222,14 +211,14 @@ $nav-height:70px;
                 margin-bottom: 24px;
             }
             dd{
-                width: 600px - 118px;
                 input, textarea{
                     border: #bfbfbf 1px solid;
-                    width: 100%;
                     height: 36px;
+                    width:70%;
                 }
                 textarea{
                     height: 108px;
+                    width:70%;
                 }
             }
         }
