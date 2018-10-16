@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.1.3.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>チーズアカデミー</title>
     <meta name="description" content=“世界を変えるチーズを作ろう。チーズアカデミーは、チーズ職人を養成するための学校です。”>
@@ -18,7 +20,10 @@
     <link rel="shortcut icon" href="images/common/favicon.ico">
     <link rel="stylesheet" href="./css/reset.css"> 
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/style-sp.css">
+    <script src="./js/effect.js" type="text/javascript"></script>
+    <!-- <link rel="stylesheet" href="./css/style-sp.css"> -->
+    <script type="text/javascript" src="./dragons/prev/processing-1.4.1.n_hack.js"></script>
+
 </head>
 <body>
 
@@ -178,25 +183,52 @@
                         <dd><input type="email" name="" id=""></dd>
                         <dt>志望動機</dt>
                         <dd class="radio-button">
-                            <input type="radio" name="hoge" id="">起業をしたい<br>
-                            <input type="radio" name="hoge" id="">チーズ系企業に就職・転職したい<br>
-                            <input type="radio" name="hoge" id="">チーズと関わる仕事をしており、仕事に生かしたい<br>
-                            <input type="radio" name="hoge" id="">チーズの教養を身につけたい<br>
+                            <div class="checkbox"><input type="checkbox" name="hoge" id=""><span>起業をしたい</span></div> 
+                            <div class="checkbox"><input type="checkbox" name="hoge" id=""><span>チーズ系企業に就職・転職したい</span></div>
+                            <div class="checkbox"><input type="checkbox" name="hoge" id=""><span>チーズと関わる仕事をしており、仕事に生かしたい</span></div>
+                            <div class="checkbox"><input type="checkbox" name="hoge" id=""><span>チーズの教養を身につけたい</span></div>
                         </dd>
                         <dt>詳細</dt>
                         <dd><textarea name="" id="" cols="30" rows="10"></textarea></dd>
                     </dl>
-                    <input type="submit" value="送信" class="btn">
+                    <!-- <input type="submit" value="送信" class="btn"> -->
+                    <a class='btn' id="send-button">送信</a>
                 </form>
+                <h2></h2>
             </div>
+        </div>
+        <div id="dragons">
+            <div class="content">
+                <div class="wrapper">
+                    <h2>ちーず＆どらごんず</h2>
+                    <p>KOSUGEドラゴンからどんなチーズが出るかな？</p>
+                    <p>激レアはなんと...！</p>
+                    <canvas width="540" height="500" data-processing-sources="./dragons/prev/nkk_dragons.pde"></canvas>	
+                </div>
+            </div>
+        </div>
+        
+        <!-- Back to Top icon -->
+        <div id="back-to-top">
+            <a href="#"><p>▲</p><p>Top</p></a>
         </div>
     </main>
     <footer>
         copyrights 2016-2018 Cheeese Academy Tokyo All RIghts Reserved.
     </footer>
 
-
-
+    <!-- Modal Window -->
+    <div class="modal">
+        <div class="msgbox">
+            <div class="warning">
+                <br>
+                <h2>押したね...？</h2>
+                <p>あれだけ押さないでって言ったのに...</p>
+                <p>押したね...？？</p>
+                <a class="btn back-toppage">ごめんなさい</a>
+            </div>
+        </div>
+    </div>
 
 
 </body>

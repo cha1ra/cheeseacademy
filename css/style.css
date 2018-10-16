@@ -134,9 +134,12 @@ nav {
     flex-wrap: wrap; }
     #access dl dt {
       width: 118px;
-      text-align-last: left; }
+      text-align-last: left;
+      margin-bottom: 24px; }
     #access dl dd {
-      width: 362px; }
+      margin-left: 48px;
+      width: 314px;
+      text-align: left; }
 
 #contact .wrapper {
   padding: 64px; }
@@ -146,8 +149,9 @@ nav {
   margin-bottom: 32px; }
 
 form {
-  width: 600px;
-  margin: auto; }
+  width: 630px;
+  margin: auto;
+  margin-top: 80px; }
   form dl {
     display: flex;
     flex-wrap: wrap;
@@ -156,20 +160,74 @@ form {
       width: 118px;
       margin-bottom: 24px; }
     form dl dd {
-      width: 482px; }
+      width: 512px; }
       form dl dd input, form dl dd textarea {
+        margin-left: 120px;
         border: #bfbfbf 1px solid;
-        width: 100%;
+        width: 328px;
         height: 36px; }
       form dl dd textarea {
         height: 108px; }
   form .radio-button {
     font-size: 14px;
     margin-bottom: 32px; }
-    form .radio-button input {
+    form .radio-button .checkbox {
       margin-right: 40px; }
     form .radio-button input {
       width: 24px;
       height: 24px; }
+
+#dragons {
+  background-color: #FBFBEF;
+  padding-top: 24px;
+  padding-bottom: 24px; }
+  #dragons p {
+    padding-bottom: 24px; }
+
+footer {
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #707070;
+  padding-top: 32px;
+  padding-bottom: 32px; }
+
+.modal {
+  display: none;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(80, 80, 80, 0.8); }
+  .modal .msgbox {
+    background-color: #ffffff;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    width: 400px;
+    height: 300px;
+    border-radius: 10px; }
+    .modal .msgbox .warning {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 400px;
+      transform: translate3d(-50%, -50%, 0); }
+
+#back-to-top {
+  width: 70px;
+  height: 70px;
+  font-size: 24px;
+  background-color: #ffd61a;
+  text-align: center;
+  vertical-align: middle;
+  position: fixed;
+  right: 16px;
+  bottom: 16px; }
+  #back-to-top a {
+    text-decoration: none;
+    color: #ffffff; }
 
 /*# sourceMappingURL=style.css.map */
