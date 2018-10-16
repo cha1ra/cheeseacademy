@@ -39,7 +39,12 @@ nav {
   height: 54px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; }
+  justify-content: space-between;
+  position: -webkit-sticky;
+  /* Safari */
+  position: sticky;
+  top: 0;
+  background-color: #fff; }
   nav img {
     width: auto;
     height: 100%; }

@@ -56,6 +56,10 @@ nav{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top:0;
+    background-color: #fff;
     img{
         width:auto;
         height:100%;

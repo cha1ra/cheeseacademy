@@ -12,14 +12,3 @@ $(document).on('click', '.back-toppage', function(){
     $(".modal").fadeOut();
 });
 
-
-$(document).on('click', 'a[href*=#]', function(){
-    var target = $(this.hash);
-    //if (target.length) {
-    if (target) {
-        var targetOffset = target.offset().top;
-        $('html,body').animate({scrollTop: targetOffset},400,"easeInOutQuart");
-        return false;
-        }
-});
-
