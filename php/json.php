@@ -2,15 +2,8 @@
 
 //$_POST['api'] で受け取った値によって
 switch($_POST['api']){
-    case 'gurunabi':
-        $params = array('keyid'=>'5d47eb9883a8c6bddeccf9ed02466658');
-        $url = 'https://api.gnavi.co.jp/RestSearchAPI/v3/?';
-        $url .= 'keyid='.$params['keyid'];
-        $url .= '&name='.'大戸屋';
-        break;
-
     case 'gurunabi-rep':
-        $params = array('keyid'=>'5d47eb9883a8c6bddeccf9ed02466658');
+        $params = array('keyid'=>'94d0eaca2667c3f8361033b3269f96e3');
         $url = 'https://api.gnavi.co.jp/PhotoSearchAPI/v3/?';
         $url .= 'keyid='.$params['keyid'];
         $url .= '&comment='.$_POST['words'];
